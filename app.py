@@ -1,6 +1,6 @@
 from random import random
 from kivy.app import App
-from kivy.core.window import Window
+# from kivy.core.window import Window
 from kivy.uix.widget import Widget
 from kivy.uix.button import Button
 from kivy.graphics import Color, Line
@@ -36,5 +36,5 @@ class SimpleKivy4(App):
       self.painter.canvas.clear()
 
 if __name__ == "__main__":
-    Window.fullscreen = True
+    # Window.fullscreen = True
     SimpleKivy4().run()
