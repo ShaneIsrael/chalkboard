@@ -5,7 +5,6 @@ from kivy.lang import Builder
 from kivy.uix.widget import Widget
 from kivy.uix.button import Button
 from kivy.graphics import Color, Line
-from kivy.uix.slider import Slider
 
 clear_button = '''
 FloatLayout:
@@ -22,6 +21,7 @@ FloatLayout:
         canvas.after:
             PopMatrix
 '''
+
 
 class DrawInput(Widget):
     def on_touch_down(self, touch):
@@ -46,7 +46,6 @@ class SimpleKivy4(App):
         clearbtn.bind(on_release=self.clear_canvas)
         parent.add_widget(self.painter)
         parent.add_widget(clearbtn)
-
         return parent
 
     def clear_canvas(self, obj):
