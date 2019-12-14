@@ -42,7 +42,9 @@ class SimpleKivy4(App):
     def build(self):
         parent = Widget()
         self.painter = DrawInput()
-        clearbtn = Builder.load_string(clear_button)
+        clearbtn = Button(text='X')
+        clearbtn.size = (100, 100)
+        clearbtn.pos_hint = (None, None)
         clearbtn.bind(on_release=self.clear_canvas)
         parent.add_widget(self.painter)
         parent.add_widget(clearbtn)
