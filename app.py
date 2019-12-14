@@ -46,7 +46,6 @@ class SimpleKivy4(App):
         clearbtn.bind(on_release=self.clear_canvas)
         parent.add_widget(self.painter)
         parent.add_widget(clearbtn)
-        parent.add_widget(stroke_slider)
 
         return parent
 
